@@ -74,6 +74,23 @@
         <td> 40 </td>
     </tr>
 </table>
+
+<hr>
+<h2>Code display</h2>
+
+<blockquote cite=“https://en.wikipedia.org/wiki/Binomial_coefficient”> In mathematics, the binomial coefficients are the positive integers that occur as coefficients in the binomial theorem. Commonly, a binomial coefficient is indexed by a pair of integers n ≥ k ≥ 0 </blockquote >
+<a href="https://en.wikipedia.org/wiki/Binomial_coefficient">https://en.wikipedia.org/wiki/Binomial_coefficient</a>
+
+<pre>
+    int C(int n, int k) {
+    int res = 1;
+    for (int i = n - k + 1; i <= n; ++i)
+        res *= i;
+    for (int i = 2; i <= k; ++i)
+        res /= i;
+    return res;
+}
+</pre>
 </body>
 
 </html>
